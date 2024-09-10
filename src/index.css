@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Marko+One&family=Megrim&family=Mina:wght@400;700&family=Poiret+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing-page {
+  position: relative;
+  background-color: #171717;
+  height: 100vh;
+  width: 100%;
+}
+
+.landing-page::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('./assets/pattern.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 50%;
+  z-index: -1;
+  width: 100%;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ .fade-down {
+   animation: fadeDown 3s ease-out;
+ }
+
+ body {
+   overflow-x: hidden;
+ }
