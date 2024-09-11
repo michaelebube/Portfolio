@@ -48,10 +48,13 @@ const Hero = () => {
             </div>
         </Link>   
              
-             <div className='flex w-[25%] group items-center gap-[10px] hover:cursor-pointer'>
+        <Link to="contact" smooth={true} offset={-18}>
+            <div className='flex w-[25%] group items-center gap-[10px] hover:cursor-pointer'>
                 <h3 className='group-hover:text-white'>Get in Touch</h3>
                 <FaArrowRight className='w-3 group-hover:text-white group-hover:translate-x-1' />
             </div>
+        </Link>
+            
              <div className='flex w-[25%] group items-center gap-[10px] hover:cursor-pointer'>
                 <h3 className='group-hover:text-white'>My Résumé</h3>
                 <FaArrowRight className='w-3 group-hover:text-white group-hover:translate-x-1' />

@@ -45,3 +45,12 @@
  body {
    overflow-x: hidden;
  }
+
+ /* In global.css or your custom CSS file */
+ @layer base {
+
+   textarea {
+    padding: 0;
+    line-height: normal;
+   }
+  }

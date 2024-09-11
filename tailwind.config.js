@@ -14,7 +14,10 @@ export default {
       },
       rotate: {
         'custom35': '40deg'
-      }
+      },
+      appearance: {
+        none: '-webkit-appearance: none;',
+      },
     },
   },
   plugins: [],
