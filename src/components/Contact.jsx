@@ -34,6 +34,12 @@ const handleSubmit = async (e) => {
     alert('Please fill out all fields.');
     return; // Stop submission if validation fails
   }
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailPattern.test(formData.email)) {
+  alert('Please enter a valid email address.');
+  return;
+}
+Disable
 
   e.preventDefault();
   const response = await fetch('https://getform.io/f/awngoplb', {
