@@ -15,9 +15,12 @@ const ProjCard = ({data}) => {
       </div>
 
       <div className="flex space-x-4 border-t border-[#666666] -mx-4 md:w-[109%] lg:w-[108%] xl:w-[108.5%] pl-4 font-poiret [40px]  ">
-        <button className="border border-[#666666] text-[#BDB9B9] py-1 px-3 rounded-sm mt-4 hover:bg-gray-500 hover:text-white transition">
+        <a href={data.demoLink}>
+           <button className="border border-[#666666] text-[#BDB9B9] py-1 px-3 rounded-sm mt-4 hover:bg-gray-500 hover:text-white transition">
           Live Demo
         </button>
+        </a>
+       
         <button className="border border-[#666666] text-[#BDB9B9] py-1 px-3 rounded-s mt-4 hover:bg-gray-500 hover:text-white transition">
           View Code
         </button>
