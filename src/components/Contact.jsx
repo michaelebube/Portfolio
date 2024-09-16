@@ -94,7 +94,7 @@ Disable
             
             </div>  
 
-            <div className=' mt-14 sm:mt-[75px] md:mt-[70px] xl:mt-[60px] -ml-4 sm:-ml-0 w-[110%] sm:w-auto'>
+            <div className=' mt-14 sm:mt-[75px] md:mt-[70px] xl:mt-[60px] -ml-4 sm:-ml-0 w-[112%] sm:w-auto'>
                 <form  onSubmit={handleSubmit} className='relative z-30'>
     <div className='space-y-8 sm:space-y-0 sm:flex justify-between'>
         <div className='border sm:border-none flex flex-col gap-y-1 '>

@@ -70,7 +70,7 @@ const Hero = () => {
 </div>
 
 
-            <div className='absolute top-[30px] right-10 xl:right-20 z-10 font-megrim text-white opacity-50 sm:opacity-100 text-[9px] sm:text-xs md:text-[15px] '>
+            <div className='absolute top-[30px] right-10 xl:right-20 z-10 font-megrim text-white opacity-50 sm:opacity-100 text-[7px] sm:text-xs md:text-[15px] '>
                 <h1>JUNIOR FRONT-END <br />  <span className='block text-right'>DEVELOPER</span></h1>
                 <div className='h-px border border-white/70'></div>
             </div>
