@@ -47,7 +47,7 @@
       {
         'id': 6,
         'title': 'PanelX',
-        'description': 'TaskFlow is a to-do list application where users can add tasks with a date and filter them based on specific dates, providing efficient task organization and time management.',
+        'description': 'PanelX is a dynamic dashboard built with React, Material-UI, Formik, Yup, and Nivo Charts, featuring user-friendly forms, real-time data visualization, and seamless light/dark mode switching for enhanced user experience.',
         'demoLink' : 'https://panelx.vercel.app/',
         'gitLink': 'https://github.com/michaelebube/Dashboard'
 

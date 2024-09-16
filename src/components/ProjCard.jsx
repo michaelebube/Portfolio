@@ -10,7 +10,7 @@ const ProjCard = ({data}) => {
       </div>
       
       
-      <div className="mb-8 h-[100px] sm:h-[80px] md:h-[150px] lg:h-[120px]">
+      <div className="mb-8 h-[120px] sm:h-[80px] md:h-[150px] lg:h-[120px]">
         <p className="text-[#c7c1c1] text-sm  sm:text-[16px] font-mina">{data.description}</p>
       </div>
 
@@ -21,7 +21,7 @@ const ProjCard = ({data}) => {
         </button>
         </a>
        
-       <a href={data.gitLink}>
+       <a href={data.gitLink} target='_blank' rel="noopener noreferrer">
              <button className="border border-[#666666] text-[#BDB9B9] py-1 px-3 rounded-s mt-4 hover:bg-gray-500 hover:text-white transition">
           View Code
         </button>
