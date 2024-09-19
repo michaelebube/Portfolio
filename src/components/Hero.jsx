@@ -6,6 +6,11 @@ import { Link } from 'react-scroll';
 
 
 const Hero = () => {
+    const handleDownload = () => {
+   
+    window.open("/MichaelResume.pdf", "_blank");
+  };
+
   return (
   <>
     <div className='relative z-10 '>
@@ -57,8 +62,8 @@ const Hero = () => {
         </Link>
             
              <div className='flex w-[25%] group items-center gap-[10px] hover:cursor-pointer'>
-                <h3 className='group-hover:text-white'>My Résumé</h3>
-                <FaArrowRight className='w-3 group-hover:text-white group-hover:translate-x-1' />
+                <h3 className='group-hover:text-white'   onClick={handleDownload}>My Résumé</h3>
+                <FaArrowRight className='w-3 group-hover:text-white group-hover:translate-x-1'  onClick={handleDownload} />
             </div>
             <div className='-ml-1  border border-[#666666] sm:w-[44%] md:w-[44%] lg:w-[40%]  xl:w-[38%]' ></div>
             <div className='absolute sm:-top-[31%] md:-top-[30%] xl:-top-[31%]  -rotate-custom35 border-[#666666] border h-[150%] sm:right-[69%] md:right-[68%] lg:right-[69%] xl:right-[70%] '></div>
