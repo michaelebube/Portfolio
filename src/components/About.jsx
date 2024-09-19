@@ -1,7 +1,7 @@
 import React from 'react'
 import profilePic from '../assets/Group 37.png'
 import HTMLIcon from '../assets/logos_html-5.svg'
-import CSSicon from '../assets/logos_css-3.SVG'
+import CSSicon from '../assets/logos_css-3.svg'
 import ReactIcon from '../assets/logos_tailwindcss.svg'
 import JSicon from '../assets/skill-icons_javascript.svg'
 import TailwindIcon from '../assets/vscode-icons_file-type-reactjs.svg'
