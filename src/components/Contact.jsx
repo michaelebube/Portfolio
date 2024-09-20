@@ -164,7 +164,7 @@ Disable
                  <a href="https://github.com/michaelebube" target="_blank" rel="noopener noreferrer">
         <FaGithub  className="text-gray-500 hover:text-black transition-colors duration-300 w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 xl:w-8 xl:h-8" />
       </a>
-      <a href="www.linkedin.com/in/michael-ebube-113ab82a7" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/michael-ebube-113ab82a7/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin className="text-gray-500 hover:text-blue-600 transition-colors duration-300 w-6 h-6  sm:w-6 sm:h-6 md:w-7 md:h-7 xl:w-8 xl:h-8" />
       </a>
             </div>
