@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import BgImg from '../assets/patternSVG.svg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 
 const BgStyle  = {
@@ -72,9 +73,12 @@ Disable
            <div className='px-14 sm:px-[80px] pt-[10%] sm:pt-[70px] md:pt-[65px] xl:px-[120px] z-20  '>
                 <div id='contact' className='flex justify-center  sm:ml-0   sm:justify-between -mt-2'>
                     <h1 className='font-megrim text-white/90 text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>GET IN TOUCH</h1>
-                     <h1 className='hidden sm:block font-megrim text-white/90 sm:text-sm md:text-sm lg:text-[16px] xl:text-lg md:mr-4 sm:mt-1 md:mt-1 lg:mt-2 xl:mt-1'>
+                    <Link to ="top" smooth= {true} offset = {-10}>
+                      <h1 className='hidden sm:block font-megrim text-white/90 sm:text-sm md:text-sm lg:text-[16px] xl:text-lg md:mr-4 sm:mt-1 md:mt-1 lg:mt-2 xl:mt-1  sm:cursor-pointer'>
                 MICHAEL-<span className='text-white font-extrabold'>E</span>BUBE
                 </h1>
+                    </Link>
+                     
                 
 
                 </div>
@@ -157,7 +161,7 @@ Disable
             </div>
 
             <div className='relative z-30 flex space-x-5 mt-7 items-center justify-center '>
-                 <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                 <a href="https://github.com/michaelebube" target="_blank" rel="noopener noreferrer">
         <FaGithub  className="text-gray-500 hover:text-black transition-colors duration-300 w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 xl:w-8 xl:h-8" />
       </a>
       <a href="www.linkedin.com/in/michael-ebube-113ab82a7" target="_blank" rel="noopener noreferrer">
