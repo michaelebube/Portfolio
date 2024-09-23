@@ -71,7 +71,7 @@ Disable
            <div className='absolute inset-0 bg-[#494848]/10 z-10'></div>
 
            <div className='px-14 sm:px-[80px] pt-[10%] sm:pt-[70px] md:pt-[65px] xl:px-[120px] z-20  '>
-                <div id='contact' className='flex justify-center  sm:ml-0   sm:justify-between -mt-2'>
+                <div id='contact' className='flex justify-center  sm:ml-0   sm:justify-between -mt-2 z-30'>
                     <h1 className='font-megrim text-white/90 text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>GET IN TOUCH</h1>
                     <Link to ="top" smooth= {true} offset = {-10}>
                       <h1 className='hidden sm:block font-megrim text-white/90 sm:text-sm md:text-sm lg:text-[16px] xl:text-lg md:mr-4 sm:mt-1 md:mt-1 lg:mt-2 xl:mt-1  sm:cursor-pointer'>
