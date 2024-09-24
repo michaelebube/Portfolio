@@ -73,8 +73,8 @@ Disable
            <div className='px-14 sm:px-[80px] pt-[10%] sm:pt-[70px] md:pt-[65px] xl:px-[120px] z-20  '>
                 <div id='contact' className='flex justify-center  sm:ml-0   sm:justify-between -mt-2 z-30'>
                     <h1 className='font-megrim text-white/90 text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>GET IN TOUCH</h1>
-                    <Link to ="top" smooth= {true} offset = {-10}>
-                      <h1 className='hidden sm:block font-megrim text-white/90 sm:text-sm md:text-sm lg:text-[16px] xl:text-lg md:mr-4 sm:mt-1 md:mt-1 lg:mt-2 xl:mt-1  sm:cursor-pointer'>
+                    <Link to ="top" smooth= {true} offset = {-40} className='cursor-pointer z-30'>
+                      <h1 className='hidden sm:block font-megrim text-white/90 sm:text-sm md:text-sm lg:text-[16px] xl:text-lg md:mr-4 sm:mt-1 md:mt-1 lg:mt-2 xl:mt-1  '>
                 MICHAEL-<span className='text-white font-extrabold'>E</span>BUBE
                 </h1>
                     </Link>
@@ -98,7 +98,7 @@ Disable
             
             </div>  
 
-            <div className=' mt-14 sm:mt-[75px] md:mt-[70px] xl:mt-[60px] -ml-4 sm:-ml-0 w-[112%] sm:w-auto'>
+            <div className=' mt-14 sm:mt-[75px] md:mt-[70px] xl:mt-[60px] -ml-4 sm:-ml-0 -mr-4 sm:w-auto'>
                 <form  onSubmit={handleSubmit} className='relative z-30'>
     <div className='space-y-8 sm:space-y-0 sm:flex justify-between'>
         <div className='border sm:border-none flex flex-col gap-y-1 '>

@@ -16,8 +16,8 @@ const Hero = () => {
     <div className='relative z-10 '>
            <div className='relative top-[30px] left-8 sm:top-[30px] sm:left-16 xl:top-10 xl:left-20'>
     <div className='relative'>
-        <div className='absolute'>
-            <h1 id='top' className='text-[12px] opacity-50 sm:opacity-100 font-megrim text-white/90 sm:text-lg md:text-xl lg:text-2xl'>
+        <div id='top'  className='absolute '>
+            <h1  className='text-[12px] opacity-50 sm:opacity-100 font-megrim text-white/90 sm:text-lg md:text-xl lg:text-2xl'>
                 MICHAEL-<span className='text-white font-extrabold'>E</span>BUBE
             </h1>
             <div className='opacity-50 sm:opacity-100 h-[1px] border mt-1 border-white/70 w-full '></div>
