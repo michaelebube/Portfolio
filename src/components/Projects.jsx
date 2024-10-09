@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import BgImg from '../assets/patternSVG.svg'
 import projItems  from '../projItems'
 import ProjCard from './ProjCard'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BgStyle  = {
     backgroundImage: `url(${BgImg})`,
@@ -13,10 +15,17 @@ const BgStyle  = {
 
 const Projects = () => {
 
+useEffect(() => {
+    AOS.init({
+      duration: 1200, 
+      delay: 100, 
+      easing: 'ease'
+    });
+  }, []);
 
   return (
     <>
-         <div className='relative h-[2200px] sm:h-[2000px] md:h-[1280px] lg:h-[1200px] xl:h-[850px] z-10'>
+         <div data-aos="fade-right" className='relative h-[2200px] sm:h-[2000px] md:h-[1280px] lg:h-[1200px] xl:h-[850px] z-10'>
             <div className='absolute inset-0 -z-10' style={BgStyle}></div>
            <div className='absolute inset-0 bg-[#494848]/70 z-10'></div>
             <div className='relative z-20 ml-8 sm:ml-16 xl:ml-20 '>

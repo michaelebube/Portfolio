@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import profilePic from '../assets/Group 37.png'
 import HTMLIcon from '../assets/logos_html-5.svg'
 import CSSicon from '../assets/logos_css-3.svg'
@@ -6,6 +6,8 @@ import ReactIcon from '../assets/logos_tailwindcss.svg'
 import JSicon from '../assets/skill-icons_javascript.svg'
 import TailwindIcon from '../assets/vscode-icons_file-type-reactjs.svg'
 import BgImg from '../assets/patternSVG.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BgStyle  = {
     backgroundImage: `url(${BgImg})`,
@@ -18,11 +20,17 @@ const BgStyle  = {
 
 const About = () => {
 
-    
+    useEffect(() => {
+    AOS.init({
+      duration: 1200, 
+      delay: 100, 
+      easing: 'ease'
+    });
+  }, []);
 
   return (
    <>
-    <div className='relative  sm:mt-[22%] md:mt-[18%] lg:mt-[15%] xl:mt-[12%] overflow-x-hidden overflow-y-hidden'>
+    <div data-aos="fade-left" className='relative  sm:mt-[22%] md:mt-[18%] lg:mt-[15%] xl:mt-[12%] overflow-x-hidden overflow-y-hidden'>
    
       <div className='-z-10 h-[740px] sm:h-[850px] md:h-[600px] xl:h-[650px] sm:bg-gradient-to-b from-[#171717cc] via-[#676464b3] to-[#171717cc]'>
         <div className='absolute inset-0 ' style={BgStyle}></div>

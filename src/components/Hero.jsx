@@ -40,7 +40,7 @@ const Hero = () => {
 
         <div className='hidden fade-down relative mt-6 sm:flex sm:flex-col space-y-[14px] xl:space-y-4 sm:text-[16px] md:text-lg xl:text-2xl text-[#BDB9B9] font-mina'>
             <div className='-ml-1 border border-[#666666] sm:w-[24%] md:w-[28%] lg:w-[26%] ' ></div>
-            <Link to="about" smooth={true} offset={-95} >
+            <Link to="about" smooth={true} offset={-105} >
                  <div className='flex group w-[25%] items-center gap-[10px] hover:cursor-pointer'>
                 
                 <h3 className='group-hover:text-white '>Behind the Code</h3>

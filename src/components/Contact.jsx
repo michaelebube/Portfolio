@@ -1,7 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import BgImg from '../assets/patternSVG.svg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const BgStyle  = {
@@ -29,20 +31,22 @@ const Contact = () => {
     }));
   };
 
-const handleSubmit = async (e) => {
+     const [showMessage, setShowMessage] = useState(false);
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
     alert('Please fill out all fields.');
-    return; // Stop submission if validation fails
+    return; 
   }
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 if (!emailPattern.test(formData.email)) {
   alert('Please enter a valid email address.');
   return;
 }
-Disable
 
-  e.preventDefault();
+
+  
   const response = await fetch('https://getform.io/f/awngoplb', {
     method: 'POST',
     headers: {
@@ -59,14 +63,31 @@ Disable
       email: '',
       message: ''
     });
+
+     
+    setShowMessage(true);
+
+             
+    setTimeout(() => {
+          setShowMessage(false);
+    }, 6000);
+
   } else {
     console.error('Form submission error');
   }
 };
 
+ useEffect(() => {
+    AOS.init({
+      duration: 1200, 
+      delay: 100, 
+      easing: 'ease'
+    });
+  }, []);
+
   return (
    <>
-    <div className='h-[850px] sm:h-screen sm:pb-24 md:h-screen xl:pb-14  relative '>
+    <div data-aos="fade-down" className='h-[850px] sm:h-screen sm:pb-24 md:h-screen xl:pb-14  relative '>
         <div className='absolute inset-0 -z-20' style={BgStyle}></div>
            <div className='absolute inset-0 bg-[#494848]/10 z-10'></div>
 
@@ -168,7 +189,12 @@ Disable
         <FaLinkedin className="text-gray-500 hover:text-blue-600 transition-colors duration-300 w-6 h-6  sm:w-6 sm:h-6 md:w-7 md:h-7 xl:w-8 xl:h-8" />
       </a>
             </div>
-            
+
+      {showMessage ?
+            <div className='absolute bottom-[2%] sm:bottom-[10%] text-[12px] sm:text-sm lg:text-[16px] mx-auto'>
+              <h3 className='text-white/90  transition-all'>Sent! Thanks for reaching out.</h3>
+            </div> : ''
+}
 
 
                 
