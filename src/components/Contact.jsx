@@ -87,7 +87,7 @@ if (!emailPattern.test(formData.email)) {
 
   return (
    <>
-    <div data-aos="fade-down" className='h-[850px] sm:h-screen sm:pb-24 md:h-screen xl:pb-14  relative '>
+    <div data-aos="fade-down" className='h-[850px] sm:max-h-screen sm:pb-24 md:max-h-[720px] xl:max-h-screen xl:pb-14  relative '>
         <div className='absolute inset-0 -z-20' style={BgStyle}></div>
            <div className='absolute inset-0 bg-[#494848]/10 z-10'></div>
 
