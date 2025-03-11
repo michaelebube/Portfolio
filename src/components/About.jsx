@@ -48,7 +48,7 @@ const About = () => {
             <div className='flex items-center justify-center sm:block'>
                 <img src={profilePic} alt="" className='max-w-[150px]  sm:max-w-[250px] pt-7 sm:pt-10 md:pt-0  sm:ml-[25%] md:ml-0 md:max-w-[250px] lg:max-w-[280px]
                 xl:max-w-[350px] mr-8 sm:mr-0
-                md:mt-10 md:mr-14 lg:mt-2 xl:mr-20  ' />
+                md:mt-10 md:mr-14 lg:mt-2 xl:mr-20 filter brightness-95 hover:brightness-125 transition duration-500  ' />
             </div>
 
 
