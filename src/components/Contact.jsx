@@ -31,7 +31,8 @@ const Contact = () => {
     }));
   };
 
-     const [showMessage, setShowMessage] = useState(false);
+     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+     const [showErrorMessage, setShowErrorMessage] = useState(false);
 
 const handleSubmit = async (e) => {
   e.preventDefault();
@@ -74,6 +75,12 @@ if (!emailPattern.test(formData.email)) {
 
   } else {
     console.error('Form submission error');
+    setShowErrorMessage(true);
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   }
 };
 
@@ -181,7 +188,7 @@ if (!emailPattern.test(formData.email)) {
     </form>  
             </div>
 
-            <div className='relative z-30 flex space-x-5 mt-7 items-center justify-center '>
+            <div className='relative z-30 flex space-x-5 mt-7 mb-2 items-center justify-center '>
                  <a href="https://github.com/michaelebube" target="_blank" rel="noopener noreferrer">
         <FaGithub  className="text-gray-500 hover:text-black transition-colors duration-300 w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 xl:w-8 xl:h-8" />
       </a>
@@ -190,11 +197,20 @@ if (!emailPattern.test(formData.email)) {
       </a>
             </div>
 
-      {showMessage ?
-            <div className='absolute bottom-[2%] sm:bottom-[10%] text-[12px] sm:text-sm lg:text-[16px] mx-auto'>
-              <h3 className='text-white/90  transition-all'>Sent! Thanks for reaching out.</h3>
-            </div> : ''
+      {showSuccessMessage ? <div className='mb-3 mt-2 w-full'> 
+        <div class=" mt-1 alert alert-outline alert-success alert-[#666666] flex items-center gap-5 w-full " role="alert">
+  <span class="icon-[tabler--circle-check] size-6"></span>
+  <p>Sent! Thanks for reaching out.
+  </p>
+</div>
+      </div> : " "
 }
+
+      {showErrorMessage ? <div>
+        <div class="alert alert-soft alert-error" role="alert">
+  Oops! It seems there was an unexpected error. Please try again later.
+</div>
+      </div> :  "" }
 
 
                 

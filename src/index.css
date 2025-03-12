@@ -46,7 +46,7 @@
    overflow-x: hidden;
  }
 
- /* In global.css or your custom CSS file */
+ 
  @layer base {
 
    textarea {
