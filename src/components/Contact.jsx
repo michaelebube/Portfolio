@@ -70,7 +70,7 @@ if (!emailPattern.test(formData.email)) {
 
              
     setTimeout(() => {
-          setShowMessage(false);
+          setShowSuccessMessage(false);
     }, 6000);
 
   } else {
@@ -81,6 +81,9 @@ if (!emailPattern.test(formData.email)) {
       email: '',
       message: ''
     });
+    setTimeout(() => {
+          setShowErrorMessage(false);
+    }, 6000);
   }
 };
 
