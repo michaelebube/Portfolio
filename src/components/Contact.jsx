@@ -66,7 +66,7 @@ if (!emailPattern.test(formData.email)) {
     });
 
      
-    setShowMessage(true);
+    setShowSuccessMessage(true);
 
              
     setTimeout(() => {
