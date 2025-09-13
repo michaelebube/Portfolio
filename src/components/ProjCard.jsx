@@ -3,7 +3,7 @@ import React from 'react'
 const ProjCard = ({data}) => {
   return (
     <>
-          <div className="bg-transparent  border-[#666666] border-[2px] rounded-sm p-4 w-full  md:max-w-[400px] lg:max-w-[450px] xl:max-w-[420px]  mt-12 xl:mt-16 shadow-lg hover:scale-105 transition">
+          <div className="bg-transparent  border-[#666666] border-[2px] rounded-sm p-4 w-full  md:max-w-[400px] lg:max-w-[450px] xl:max-w-[420px]  mt-12 xl:mt-16 shadow-lg hover:scale-[1.03] transition">
       <div className="pb-2 mb-4  ">
         <h1 className="text-white/90 text-[16px] sm:text-lg font-semibold font-mina">{data.title}</h1>
         <div className='-mx-4 border border-[#666666] md:max-w-[109.5%] lg:w-[108%] xl:w-[108.5%] mt-2 '></div>

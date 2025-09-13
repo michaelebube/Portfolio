@@ -2,9 +2,12 @@ import React, {useEffect} from 'react'
 import profilePic from '../assets/Group 37.png'
 import HTMLIcon from '../assets/logos_html-5.svg'
 import CSSicon from '../assets/logos_css-3.svg'
-import ReactIcon from '../assets/logos_tailwindcss.svg'
+import TailwindIcon from '../assets/logos_tailwindcss.svg'
 import JSicon from '../assets/skill-icons_javascript.svg'
-import TailwindIcon from '../assets/vscode-icons_file-type-reactjs.svg'
+import ReactIcon from '../assets/vscode-icons_file-type-reactjs.svg'
+import TSIcon from '../assets/typescript-icon.svg'
+import VueIcon from '../assets/vue-svgrepo-com.svg'
+import NuxtIcon from '../assets/nuxt-icon.svg'
 import BgImg from '../assets/patternSVG.svg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -16,6 +19,18 @@ const BgStyle  = {
     opacity: 0.9
     
 }
+
+const icons = [
+    { src: HTMLIcon, alt: 'HTML5' },
+    { src: CSSicon, alt: 'CSS3' },
+    { src: JSicon, alt: 'JavaScript' },  
+    { src: TSIcon, alt: 'TypeScript' },
+    { src: ReactIcon, alt: 'React' },
+    { src: VueIcon, alt: 'Vue' },
+    { src: NuxtIcon, alt: 'Nuxt' },
+    { src: TailwindIcon, alt: 'Tailwind' },
+  ];
+
 
 
 const About = () => {
@@ -59,11 +74,14 @@ const About = () => {
 
                 <div className='absolute'>
                     <div className='mt-4 sm:mt-3   flex gap-4 sm:gap-5 z-20 lg:gap-6 '>
-                        <img src={HTMLIcon} alt="" className='w-[20px] md:w-[25px] lg:w-[40px] sm:w-[35px]' />
-                        <img src={CSSicon} alt="" className='w-[20px] md:w-[25px] lg:w-[40px] sm:w-[35px]' />
-                        <img src={JSicon} alt="" className='lg:w-[40px] md:w-[25px] sm:w-[35px] w-[20px]' />
-                        <img src={ReactIcon} alt="" className='lg:w-[120px] md:w-[90px] sm:w-[120px] w-[65px] ' />
-                        <img src={TailwindIcon} alt="" className='lg:w-[40px] md:w-[25px] sm:w-[35px] w-[20px]' />
+                        {icons.map((icon) => (
+                            <img key={icon.alt} src={icon.src} alt={icon.alt}   className={`
+    ${icon.alt === 'Tailwind'
+      ? 'w-[65px] sm:w-[120px] md:w-[90px] lg:w-[120px]'
+      : 'w-[20px] sm:w-[35px] md:w-[25px] lg:w-[40px]'
+    }
+  `} />
+                        ))}
                     </div>
 
                     <div className=' h-px  border border-white/70 mt-[10px] sm:mt-4 md:mt-5 '></div>
