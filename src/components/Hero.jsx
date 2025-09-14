@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 const Hero = () => {
     const handleDownload = () => {
    
-    window.open("/MichaelResume.pdf", "_blank");
+    window.open("/Michael_Resume.pdf", "_blank");
   };
 
   return (
